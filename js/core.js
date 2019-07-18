@@ -62,7 +62,7 @@ $(document).ready(function () {
         }
         //set readme 
         $.get(readmeURL, function (result) {
-            $("#title").fadeIn();
+            $("#title").fadeIn("fast");
             $("#article").html("");
             $("#article").hide();
             testEditormdView = editormd.markdownToHTML("article", {
@@ -106,7 +106,7 @@ function setBlogTxt(obj) {
 
     // set blog content     
     $.get(blogURL, function (result) {
-        $("#title").fadeIn();
+        $("#title").fadeIn("fast");
         if (type == "markdown") {
             $("#article").html("");
             $("#article").hide();
